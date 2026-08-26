@@ -1,0 +1,5 @@
+# Netlify Redirects File - 100% Error Free Routing
+/favicon.ico                     /logo.jpg            200
+/apple-touch-icon.png            /apple-touch-icon.png 200
+/apple-touch-icon-precomposed.png /logo.jpg            200
+/*                               /index.html          200
