@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>PETER'S GYM | #1 Fitness & Strength Center in Dera Bassi, Punjab</title>
+    <meta name="description" content="Peter's Gym - Premium 2-floor athletic training center at 2nd & 3rd Floor LIC Building, near Police Station, Dera Bassi, Punjab 140507. Heavy iron, cardio loft & personal coaching. Call 07009707765 or WhatsApp.">
+    <meta name="keywords" content="Peter Gym Dera Bassi, Gym in Dera Bassi, Best Gym Dera Bassi Punjab, Personal Trainer Dera Bassi, Fitness Center LIC Building Dera Bassi">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Favicon & Apple Icons to eliminate 404s -->
+    <link rel="icon" type="image/jpeg" href="./logo.jpg">
+    <link rel="apple-touch-icon" href="./logo.jpg">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <!-- Open Graph / Social Media Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peters-gym-derabassi-2.netlify.app/">
+    <meta property="og:title" content="PETER'S GYM | Dera Bassi, Punjab">
+    <meta property="og:description" content="2-Floor Premium Gym HQ near Police Station, Dera Bassi. Heavy Hypertrophy & Cardio Loft.">
+    <meta property="og:image" content="./logo.jpg">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="./logo.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="./section-image.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="./peter-gym-8.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="./Peters-Gym-Punjab_10.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="./Peters-Gym-Punjab_7.jpg" as="image" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide Web CDN) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <!-- Lottie Web Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Burgundy Page Transition Overlay -->
+    <div id="page-transition-overlay" class="page-transition-overlay">
+        <div class="pt-text-wrap">
+            <span class="pt-word" data-word="DO">DO</span>
+            <span class="pt-word" data-word="WORKOUT">WORKOUT</span>
+        </div>
+    </div>
+
+    <!-- Custom Circle Mirror Ring Cursor (single ring, no inner dot) -->
+    <div id="cursor-ring" class="cursor-ring"></div>
+
+    <!-- iPhone Style Liquid Glassy Navigation Bar (Hides on Scroll Down, Appears on Scroll Back) -->
+    <header class="navbar-wrapper" id="navbar-wrapper">
+        <nav class="liquid-navbar" id="liquid-navbar">
+            <div class="nav-glow"></div>
+            <div class="nav-border-glow"></div>
+            <div class="nav-passing-sheen"></div>
+            
+            <a href="#" class="nav-brand">
+                <img src="./logo.jpg" alt="Peter's Gym Logo" class="brand-logo-img" width="40" height="40" decoding="async">
+                <div class="brand-text">
+                    <span class="brand-name">PETER'S</span>
+                    <span class="brand-sub">GYM</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+                <div class="nav-liquid-pill" id="nav-pill"></div>
+                <a href="#hero" class="nav-link active" data-index="0">Home</a>
+                <a href="#membership" class="nav-link" data-index="1">Membership</a>
+                <a href="#location" class="nav-link" data-index="2">Location</a>
+                <a href="#reviews" class="nav-link" data-index="3">Reviews</a>
+                <a href="#contact" class="nav-link" data-index="4">Contact</a>
+                <a href="#calculator" class="nav-link" data-index="5">Metrics</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="nav-insta-icon-link" aria-label="Instagram Official" title="Follow @petersgymderabassi">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insta-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="#membership" class="btn-liquid-cta">
+                    <span>JOIN NOW</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Full-Screen Glass Blur Navigation Overlay Modal -->
+    <div id="full-nav-overlay" class="full-nav-overlay" aria-hidden="true">
+        <div class="nav-overlay-backdrop"></div>
+        <div class="nav-overlay-container">
+            <div class="nav-overlay-header">
+                <div class="overlay-brand">
+                    <img src="./logo.jpg" alt="Peter's Gym Logo" class="overlay-logo-img" width="44" height="44">
+                    <div class="overlay-brand-text">
+                        <span class="overlay-brand-name">PETER'S</span>
+                        <span class="overlay-brand-sub">GYM HQ</span>
+                    </div>
+                </div>
+                <button class="nav-overlay-close" id="nav-overlay-close" aria-label="Close Navigation Menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <div class="nav-overlay-body">
+                <nav class="nav-overlay-menu">
+                    <a href="#hero" class="overlay-nav-item" data-target="hero">
+                        <span class="overlay-num">01</span>
+                        <span class="overlay-title">Home</span>
+                        <span class="overlay-desc">Main Reel & Facility Intro</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                    <a href="#membership" class="overlay-nav-item" data-target="membership">
+                        <span class="overlay-num">02</span>
+                        <span class="overlay-title">Membership</span>
+                        <span class="overlay-desc">Rates & Athletic Passes</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                    <a href="#location" class="overlay-nav-item" data-target="location">
+                        <span class="overlay-num">03</span>
+                        <span class="overlay-title">Location</span>
+                        <span class="overlay-desc">LIC Building, Dera Bassi</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                    <a href="#reviews" class="overlay-nav-item" data-target="reviews">
+                        <span class="overlay-num">04</span>
+                        <span class="overlay-title">Reviews</span>
+                        <span class="overlay-desc">Google Rating 4.8 Stars</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                    <a href="#contact" class="overlay-nav-item" data-target="contact">
+                        <span class="overlay-num">05</span>
+                        <span class="overlay-title">Contact</span>
+                        <span class="overlay-desc">Direct Calls & WhatsApp</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                    <a href="#calculator" class="overlay-nav-item" data-target="calculator">
+                        <span class="overlay-num">06</span>
+                        <span class="overlay-title">Metrics</span>
+                        <span class="overlay-desc">Body Metrics & TDEE Tool</span>
+                        <i data-lucide="chevron-right" class="overlay-arrow"></i>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="nav-overlay-footer">
+                <a href="tel:+917009707765" class="overlay-action-btn">
+                    <i data-lucide="phone"></i> Call: 07009707765
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" rel="noopener" class="overlay-action-btn whatsapp">
+                    <i data-lucide="message-circle"></i> WhatsApp Us
+                </a>
+                <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="overlay-action-btn instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Empty Header Hero Section with Horizontal Video Reel Strip (pt1.mp4 - pt6.mp4) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        
+        <div class="hero-container-videos">
+            <!-- Header Video Reel Strip — Scrollable via Mouse Drag, Touch & Wheel -->
+            <div class="hero-videos-scroll-wrapper" id="hero-video-scroll">
+                <div class="hero-videos-track" id="hero-videos-track">
+                    <!-- 7 Video Reels (pt1 to pt7) -->
+                    <div class="hero-video-card">
+                        <video src="./pt1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt5.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt6.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                    <div class="hero-video-card">
+                        <video src="./pt7.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="video-overlay-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main id="main-content" class="main-content">
+
+        <!-- Stats Banner -->
+        <section class="stats-banner">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-value" id="stat-counter-5000" data-target="5000">0+</h3>
+                        <p class="stat-label">TRANSFORMATIONS</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-value">2 FLOORS</h3>
+                        <p class="stat-label">2ND & 3RD FLOOR HQ</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-value">100%</h3>
+                        <p class="stat-label">HEAVY IRON & CARDIO</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-value" style="font-size: clamp(1.2rem, 2.5vw, 2rem); white-space: nowrap;">DERA BASSI</h3>
+                        <p class="stat-label">NEAR POLICE STATION</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Philosophy Section -->
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="philosophy-grid">
+                    <div class="philosophy-text">
+                        <div class="section-tag"><i data-lucide="target"></i> THE PETER'S GYM STANDARD</div>
+                        <h2 class="section-title">WE DON'T DO AVERAGE. WE BUILD POWER.</h2>
+                        <p class="section-lead">
+                            Located on the 2nd & 3rd Floor of the LIC Building in Dera Bassi, Peter's Gym offers two expansive floors of high-performance strength equipment, cardio lofts, and personal training.
+                        </p>
+                        
+                        <div class="feature-bullets">
+                            <div class="bullet-item">
+                                <div class="bullet-icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <h4>Dual Floor Training Facility</h4>
+                                    <p>2nd Floor dedicated to heavy hypertrophy & strength; 3rd Floor for cardio & functional training.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-item">
+                                <div class="bullet-icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <h4>Direct Personal Mentorship</h4>
+                                    <p>Call or WhatsApp +91 7009707765 for customized workout & nutrition plans.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-item">
+                                <div class="bullet-icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <h4>Prime Location in Dera Bassi</h4>
+                                    <p>Right near Police Station on College Road, LIC Building.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="philosophy-visual">
+                        <div class="glass-card visual-card">
+                            <div class="visual-glow"></div>
+                            <div class="visual-badge">
+                                <i data-lucide="trophy"></i> DERA BASSI #1 GYM
+                            </div>
+                            <div class="visual-quote">
+                                "The hardest part is walking through the door. Once you're here, we handle the rest."
+                            </div>
+                            <div class="visual-author">— PETER'S GYM TEAM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unmask Brand Philosophy Section (Black Parallax BG + Progressive Line-by-Line Scroll Unmask Reveal) -->
+        <section id="unmask-philosophy" class="section-padding unmask-section">
+            <div class="unmask-parallax-bg" id="unmask-parallax-bg"></div>
+            
+            <div class="container unmask-container">
+                <!-- Bottom Left Subtitle Tag -->
+                <div class="unmask-subtitle-left">
+                    <span class="unmask-tag-text">WHAT PETER'S STAND FOR</span>
+                </div>
+
+                <!-- Right Side Unmask Main Text (~4 words per line with progressive scroll reveal) -->
+                <div class="unmask-content-right" id="unmask-text-content">
+                    <div class="unmask-paragraph lead-p">
+                        <span class="unmask-line line-1">PETER'S GYM is built</span>
+                        <span class="unmask-line line-2">for athletes who want</span>
+                        <span class="unmask-line line-3">structure, consistency, and</span>
+                        <span class="unmask-line line-4">results through disciplined</span>
+                        <span class="unmask-line line-5">training.</span>
+                    </div>
+
+                    <div class="unmask-spacer"></div>
+
+                    <div class="unmask-paragraph sub-p">
+                        <span class="unmask-line line-6">We provide structured training,</span>
+                        <span class="unmask-line line-7">expert coaching, and a</span>
+                        <span class="unmask-line line-8">focused environment designed</span>
+                        <span class="unmask-line line-9">to help athletes improve</span>
+                        <span class="unmask-line line-10">every day.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Included Section (Big Stacked Burgundy Header + Line-to-Text Morph + Name-Slip Style Cards + Unmask Reveal) -->
+        <section id="program-included" class="section-padding program-section unmask-scroll-target">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="morph-line-container">
+                        <div class="morph-line" id="program-morph-line"></div>
+                    </div>
+                    <h2 class="program-title-burgundy-stacked" id="program-morph-text">
+                        <span class="program-word-top">PROGRAM</span>
+                        <span class="program-word-bottom">INCLUDED</span>
+                    </h2>
+                </div>
+
+                <div class="program-grid-212">
+                    <!-- Row 1: 2 Cards (Name Slip Style: Square Image Left, Text Right) -->
+                    <div class="program-card name-slip-card scroll-ease-up">
+                        <div class="program-square-wrapper">
+                            <img src="./coaching.jpg" alt="1-on-1 Personal Coaching" loading="lazy" decoding="async">
+                        </div>
+                        <div class="program-info">
+                            <h3 class="program-card-title">1-ON-1 PERSONAL COACHING</h3>
+                            <p class="program-card-desc">Custom hypertrophy, strength progression, and form correction by certified head coaches.</p>
+                        </div>
+                    </div>
+
+                    <div class="program-card name-slip-card scroll-ease-up">
+                        <div class="program-square-wrapper">
+                            <img src="./skilled training.jpg" alt="Skilled Athletic Training" loading="lazy" decoding="async">
+                        </div>
+                        <div class="program-info">
+                            <h3 class="program-card-title">SKILLED ATHLETIC TRAINING</h3>
+                            <p class="program-card-desc">High-level strength development, powerlifting technique, and speed endurance protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: 1 Card Centered -->
+                    <div class="program-card name-slip-card program-card-center scroll-ease-up">
+                        <div class="program-square-wrapper">
+                            <img src="./workout plan.jpg" alt="Custom Workout & Nutrition Plan" loading="lazy" decoding="async">
+                        </div>
+                        <div class="program-info">
+                            <h3 class="program-card-title">CUSTOM WORKOUT & NUTRITION PLAN</h3>
+                            <p class="program-card-desc">Periodized 12-week training split tailored to your specific body composition and goals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: 2 Cards -->
+                    <div class="program-card name-slip-card scroll-ease-up">
+                        <div class="program-square-wrapper">
+                            <img src="./group disscuino.jpg" alt="Group Mentorship & Discussions" loading="lazy" decoding="async">
+                        </div>
+                        <div class="program-info">
+                            <h3 class="program-card-title">GROUP MENTORSHIP & DISCUSSIONS</h3>
+                            <p class="program-card-desc">Weekly strategy sessions, mindset guidance, and recovery optimization with team athletes.</p>
+                        </div>
+                    </div>
+
+                    <div class="program-card name-slip-card scroll-ease-up">
+                        <div class="program-square-wrapper">
+                            <img src="./live events.jpg" alt="Live Events & Athletic Challenges" loading="lazy" decoding="async">
+                        </div>
+                        <div class="program-info">
+                            <h3 class="program-card-title">LIVE EVENTS & ATHLETIC CHALLENGES</h3>
+                            <p class="program-card-desc">Exclusive member competitions, max lift showcases, and community athletic events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Athlete Unmask Image Section with uploaded aditya.jpg (Pure Clear Image, No Text Overlay) -->
+        <section id="athlete-unmask" class="section-padding athlete-unmask-section unmask-scroll-target pure-image-unmask">
+            <div class="athlete-bg-image-wrapper">
+                <img src="./aditya.jpg" alt="Peter's Gym Athlete" class="athlete-bg-img" loading="eager" decoding="async">
+                <div class="athlete-bg-overlay"></div>
+            </div>
+            <div class="container athlete-unmask-container">
+                <!-- Clean Image Section - No Text Content -->
+            </div>
+        </section>
+
+        <!-- Membership Plans Section -->
+        <section id="membership" class="section-padding membership-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag mx-auto"><i data-lucide="award"></i> MEMBERSHIP PASSES</div>
+                    <h2 class="section-title">CHOOSE YOUR LEVEL OF DOMINANCE</h2>
+
+
+                    <!-- Billing Toggle Switch -->
+                    <div class="billing-toggle-container">
+                        <span class="billing-label" id="label-monthly">Monthly</span>
+                        <button class="billing-switch" id="billing-switch" aria-label="Toggle Annual Billing">
+                            <div class="switch-handle"></div>
+                        </button>
+                        <span class="billing-label active" id="label-annual">
+                            Annual <span class="badge-discount">SAVE 20%</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Basic Card -->
+                    <div class="glass-plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">STARTER PASS</h3>
+                            <p class="plan-desc">Essential access to 2nd & 3rd Floor equipment.</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" data-monthly="1500" data-annual="1200">1200</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check"></i> 2nd & 3rd Floor Access</li>
+                            <li><i data-lucide="check"></i> Heavy Dumbbells & Barbell Bay</li>
+                            <li><i data-lucide="check"></i> Cardio Deck & Locker Rooms</li>
+                            <li class="disabled"><i data-lucide="x"></i> 1-on-1 Personal Trainer</li>
+                        </ul>
+                        <button class="btn-plan-select" data-plan="Starter Pass">CHOOSE STARTER</button>
+                    </div>
+
+                    <!-- Pro / Popular Card -->
+                    <div class="glass-plan-card featured">
+                        <div class="featured-badge">MOST POPULAR</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">IRON ATHLETE</h3>
+                            <p class="plan-desc">For lifters wanting guided training and full floor access.</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" data-monthly="2500" data-annual="1999">1999</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check"></i> Full 2nd & 3rd Floor Access</li>
+                            <li><i data-lucide="check"></i> Customized Gym Training Schedule</li>
+                            <li><i data-lucide="check"></i> Personal Body Composition Checks</li>
+                            <li><i data-lucide="check"></i> WhatsApp Support (+91 70097 07765)</li>
+                        </ul>
+                        <button class="btn-plan-select btn-featured" data-plan="Iron Athlete">JOIN AS IRON ATHLETE</button>
+                    </div>
+
+                    <!-- VIP Elite Card -->
+                    <div class="glass-plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">VIP PLATINUM</h3>
+                            <p class="plan-desc">1-on-1 Personal Coaching & Premium Transformation plan.</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" data-monthly="4500" data-annual="3499">3499</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check"></i> Dedicated Personal Trainer</li>
+                            <li><i data-lucide="check"></i> Customized Nutrition & Diet Blueprint</li>
+                            <li><i data-lucide="check"></i> Priority Coaching Support</li>
+                            <li><i data-lucide="check"></i> Free Guest Passes Included</li>
+                        </ul>
+                        <button class="btn-plan-select" data-plan="VIP Platinum">CLAIM VIP PLATINUM</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Facilities Section -->
+        <section id="location" class="section-padding location-section">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info">
+                        <div class="section-tag"><i data-lucide="map-pin"></i> DERA BASSI, PUNJAB</div>
+                        <h2 class="section-title">PETER'S GYM DERA BASSI HQ</h2>
+                        <p class="section-lead">
+                            Visit our multi-story gym on the 2nd and 3rd Floor of LIC Building, conveniently situated right near the Police Station in Dera Bassi, Punjab 140507.
+                        </p>
+
+                        <div class="info-cards-list">
+                            <div class="info-glass-card">
+                                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <h4>Physical Address</h4>
+                                    <p><strong>2nd & 3rd Floor, LIC Building</strong><br>Near Police Station, Dera Bassi, Punjab 140507</p>
+                                </div>
+                            </div>
+
+                            <div class="info-glass-card">
+                                <div class="info-icon"><i data-lucide="clock"></i></div>
+                                <div>
+                                    <h4>Gym Working Hours</h4>
+                                    <div class="hours-mini-list">
+                                        <p><strong>Mon – Sat:</strong> 5:00 AM – 12:00 PM | 4:00 PM – 10:00 PM</p>
+                                        <p><strong>Sunday:</strong> <span class="text-copper">CLOSED</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-glass-card">
+                                <div class="info-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <h4>Phone / Direct Call</h4>
+                                    <p>
+                                        Call: <a href="tel:+917009707765" class="text-copper"><strong>07009707765</strong> (+91 70097 07765)</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-glass-card">
+                                <div class="info-icon"><i data-lucide="message-circle"></i></div>
+                                <div>
+                                    <h4>WhatsApp Direct Support</h4>
+                                    <p>
+                                        <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" rel="noopener" class="text-green">
+                                            <strong>Click to Chat on WhatsApp (+91 7009707765)</strong>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-glass-card">
+                                <div class="info-icon icon-instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insta-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Instagram Official</h4>
+                                    <p>
+                                        <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="text-pink">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-link-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                            <strong>@petersgymderabassi</strong>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-map-wrapper">
+                        <div class="map-glass-card" id="map-glass-card">
+                            <div class="map-header">
+                                <span class="live-dot" id="live-status-dot"></span> 
+                                GYM STATUS: <strong id="live-status-text">CHECKING...</strong>
+                            </div>
+                            
+                            <!-- Real Google Maps Embed Pointing to Peter's Gym Dera Bassi Punjab -->
+                            <div class="map-iframe-container">
+                                <iframe 
+                                    title="Peter's Gym Dera Bassi Google Map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.542289659359!2d76.8412167763665!3d30.58259387465715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fbfa79c8310af%3A0x5a9711a3fabe5da3!2sPeter&#39;s%20Gym!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                    width="100%" 
+                                    height="340" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="map-actions-group">
+                                <a href="https://www.google.com/maps/place/Peter's+Gym/@30.5825892,76.8436054,17z/" target="_blank" rel="noopener" class="btn-map-directions">
+                                    <i data-lucide="navigation"></i> MAPS
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" rel="noopener" class="btn-whatsapp-action">
+                                    <i data-lucide="message-circle"></i> WHATSAPP
+                                </a>
+                                <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="btn-insta-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insta-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                    <span>INSTAGRAM</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Arena & Facility Showcase Section (Map Roll-Back Axis + Scroll Driven Floating Images) -->
+        <section id="facility-showcase" class="section-padding facility-3d-section">
+            <!-- Massive 3D Background Text: 15,000 SQ FT -->
+            <div class="bg-3d-text-wrapper" aria-hidden="true">
+                <span class="bg-3d-text" id="bg-3d-text">15,000 SQ FT</span>
+            </div>
+
+            <div class="container">
+                <!-- 3D Image Stage: Central Follow Image + 3 Flying Satellite Images -->
+                <div class="facility-image-stage" id="facility-image-stage">
+                    <!-- Central Follow Image -->
+                    <div class="facility-img-card img-main" id="facility-img-main">
+                        <img src="./section-image.jpg" alt="Peter's Gym Arena" loading="eager" decoding="async">
+                    </div>
+
+                    <!-- 3 Flying Satellite Images -->
+                    <div class="facility-img-card img-fly fly-left" id="facility-fly-1">
+                        <img src="./peter-gym-8.jpg" alt="Peter's Gym Deck" loading="eager" decoding="async">
+                    </div>
+
+                    <div class="facility-img-card img-fly fly-right" id="facility-fly-2">
+                        <img src="./Peters-Gym-Punjab_10.jpg" alt="Peter's Gym Racks" loading="eager" decoding="async">
+                    </div>
+
+                    <div class="facility-img-card img-fly fly-bottom" id="facility-fly-3">
+                        <img src="./Peters-Gym-Punjab_7.jpg" alt="Peter's Gym Mentorship Zone" loading="eager" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Continuous Horizontal Scrolling Google Reviews Carousel (Compact Boxes, Non-Stopping) -->
+        <section id="reviews" class="section-padding reviews-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag mx-auto"><i data-lucide="star"></i> GOOGLE MAPS REVIEWS</div>
+                    <h2 class="section-title">WHAT ATHLETES SAY ABOUT PETER'S GYM</h2>
+                    <p class="section-subtitle">Rated 4.8 / 5.0 Stars by over 500+ members in Dera Bassi, Punjab</p>
+                </div>
+            </div>
+
+            <!-- Compact Infinite Marquee Carousel (Uninterrupted Scroll) -->
+            <div class="reviews-carousel-container" id="reviews-carousel-container">
+                <div class="reviews-marquee-track" id="reviews-track">
+                    
+                    <!-- 5 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Best gym in Dera Bassi! Spanned across 2nd & 3rd floor of LIC building with heavy machinery and Eleiko barbells."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">GS</div>
+                            <div>
+                                <h4 class="reviewer-name">Gurpreet Singh</h4>
+                                <span class="reviewer-sub">Local Guide • 5 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">"Great equipment and spacious 2 floors! Gets a bit crowded during evening 6 to 8 PM peak hours, but trainers are very helpful."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">AS</div>
+                            <div>
+                                <h4 class="reviewer-name">Amit Saini</h4>
+                                <span class="reviewer-sub">Local Guide • 4 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★☆☆</div>
+                        <p class="review-text">"Good machine selection on 2nd floor, but vehicle parking near LIC building gets full on busy weekdays."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">KG</div>
+                            <div>
+                                <h4 class="reviewer-name">Karan Grover</h4>
+                                <span class="reviewer-sub">Member • 3 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Great atmosphere for female lifters as well. Very respectful staff, proper guidance, and excellent 2-floor hygiene."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">SK</div>
+                            <div>
+                                <h4 class="reviewer-name">Simran Kaur</h4>
+                                <span class="reviewer-sub">Member • 5 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★☆☆☆</div>
+                        <p class="review-text">"Gym equipment is top class, but closed on Sundays. Wish they opened Sunday mornings for busy working folks."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">DR</div>
+                            <div>
+                                <h4 class="reviewer-name">Deepak Rana</h4>
+                                <span class="reviewer-sub">Member • 2 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">"Lost 12 kg in 4 months with Peter Gym's hypertrophy schedule. Cardio loft on 3rd floor is extremely well maintained."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">VD</div>
+                            <div>
+                                <h4 class="reviewer-name">Vikramjeet Dhillon</h4>
+                                <span class="reviewer-sub">Transformation • 4 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Two floors of pure iron! Loved the split setup between heavy compound lifts on 2nd floor and cardio on 3rd."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">HG</div>
+                            <div>
+                                <h4 class="reviewer-name">Harmanpreet Gill</h4>
+                                <span class="reviewer-sub">Lifter • 5 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★☆☆</div>
+                        <p class="review-text">"Solid heavy lifting section near Police Station. Would love slightly stronger AC cooling during peak summer afternoons."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">MS</div>
+                            <div>
+                                <h4 class="reviewer-name">Manish Sharma</h4>
+                                <span class="reviewer-sub">Local Guide • 3 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Stars -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">"Top notch dumbbell selection and reasonable pricing. Definitely one of the best spots in Dera Bassi Punjab."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">RV</div>
+                            <div>
+                                <h4 class="reviewer-name">Rohan Verma</h4>
+                                <span class="reviewer-sub">Athlete • 4 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Cards Loop for Smooth Marquee -->
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Best gym in Dera Bassi! Spanned across 2nd & 3rd floor of LIC building with heavy machinery and Eleiko barbells."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">GS</div>
+                            <div>
+                                <h4 class="reviewer-name">Gurpreet Singh</h4>
+                                <span class="reviewer-sub">Local Guide • 5 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">"Great equipment and spacious 2 floors! Gets a bit crowded during evening 6 to 8 PM peak hours, but trainers are very helpful."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">AS</div>
+                            <div>
+                                <h4 class="reviewer-name">Amit Saini</h4>
+                                <span class="reviewer-sub">Local Guide • 4 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-glass-card">
+                        <div class="review-stars">★★★☆☆</div>
+                        <p class="review-text">"Good machine selection on 2nd floor, but vehicle parking near LIC building gets full on busy weekdays."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">KG</div>
+                            <div>
+                                <h4 class="reviewer-name">Karan Grover</h4>
+                                <span class="reviewer-sub">Member • 3 Stars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pure Animation Section (Scroll-Driven Lottie 16:9 / 9:16 + Parallax Sliding - No Text) -->
+        <section id="lottie-showcase" class="lottie-parallax-section">
+            <div class="lottie-parallax-container" id="lottie-parallax-wrapper">
+                <!-- Desktop Format (16:9) -->
+                <div class="lottie-format lottie-desktop" id="lottie-desktop-player"></div>
+                <!-- Mobile Format (9:16) -->
+                <div class="lottie-format lottie-mobile" id="lottie-mobile-player"></div>
+            </div>
+        </section>
+
+        <!-- Dynamic Fitness Calculator Section -->
+        <section id="calculator" class="section-padding calc-section">
+            <div class="container">
+                <div class="calc-glass-box">
+                    <div class="calc-header">
+                        <div class="calc-header-inner">
+                            <div class="calc-badge-col">
+                                <div class="calc-badge-block">
+                                    <i data-lucide="calculator"></i>
+                                    <span>BODY METRICS</span>
+                                    <span class="calc-badge-sub">CALCULATOR</span>
+                                </div>
+                            </div>
+                            <div class="calc-title-col">
+                                <h2 class="section-title">CALCULATE YOUR ATHLETIC POTENTIAL</h2>
+                                <p class="section-subtitle">Estimate your BMI, daily caloric needs, and target protein intake for peak performance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-grid">
+                        <form id="bmi-form" class="calc-form">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="calc-gender">Gender</label>
+                                    <select id="calc-gender" class="glass-input">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="calc-age">Age (years)</label>
+                                    <input type="number" id="calc-age" class="glass-input" value="25" min="15" max="90" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="calc-height">Height (cm)</label>
+                                    <input type="number" id="calc-height" class="glass-input" value="180" min="120" max="230" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="calc-weight">Weight (kg)</label>
+                                    <input type="number" id="calc-weight" class="glass-input" value="78" min="30" max="220" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="calc-activity">Activity Level</label>
+                                <select id="calc-activity" class="glass-input">
+                                    <option value="1.2">Sedentary (Little or no exercise)</option>
+                                    <option value="1.375">Lightly Active (1-3 days/week)</option>
+                                    <option value="1.55" selected>Moderately Active (3-5 days/week intense gym)</option>
+                                    <option value="1.725">Very Active (6-7 days heavy lifting)</option>
+                                </select>
+                            </div>
+
+                            <!-- Pulsing Zoom-In / Zoom-Out Button -->
+                            <button type="submit" class="btn-calc-submit btn-pulse-zoom">
+                                <i data-lucide="activity"></i> CALCULATE METRICS
+                            </button>
+                        </form>
+
+                        <div class="calc-results-panel" id="calc-results">
+                            <h3 class="results-title">YOUR METRIC ANALYSIS</h3>
+                            <div class="results-grid">
+                                <div class="metric-box">
+                                    <span class="metric-label">BMI SCORE</span>
+                                    <span class="metric-val" id="res-bmi">24.1</span>
+                                    <span class="metric-status" id="res-bmi-status">NORMAL WEIGHT</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-label">DAILY CALORIES</span>
+                                    <span class="metric-val" id="res-calories">2,650</span>
+                                    <span class="metric-unit">kcal / day</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-label">PROTEIN TARGET</span>
+                                    <span class="metric-val" id="res-protein">156</span>
+                                    <span class="metric-unit">grams / day</span>
+                                </div>
+                            </div>
+                            <div class="results-recommendation">
+                                <i data-lucide="info"></i>
+                                <span id="res-advice">Your body is in ideal baseline condition for heavy hypertrophy & strength training at Peter's Gym Dera Bassi.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag mx-auto"><i data-lucide="mail"></i> GET IN TOUCH</div>
+                    <h2 class="section-title">START YOUR TRANSFORMATION TODAY</h2>
+                    <p class="section-subtitle">Reach us directly via phone, WhatsApp, or send an inquiry below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-card glass-card">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="contact-name">Full Name</label>
+                                    <input type="text" id="contact-name" class="glass-input" placeholder="e.g. Rahul Sharma" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="contact-email">Email Address</label>
+                                    <input type="email" id="contact-email" class="glass-input" placeholder="e.g. rahul@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="contact-phone">Phone Number</label>
+                                    <input type="tel" id="contact-phone" class="glass-input" placeholder="07009707765" value="07009707765">
+                                </div>
+                                <div class="input-group">
+                                    <label for="contact-goal">Primary Goal</label>
+                                    <select id="contact-goal" class="glass-input">
+                                        <option value="muscle">Build Muscle & Hypertrophy</option>
+                                        <option value="fatloss">Fat Loss & Conditioning</option>
+                                        <option value="powerlifting">Powerlifting & Max Strength</option>
+                                        <option value="general">General Health & VIP Coaching</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="contact-message">Message / Questions</label>
+                                <textarea id="contact-message" class="glass-input" rows="4" placeholder="Ask about gym timings, fees, or trainer availability..." required></textarea>
+                            </div>
+
+                            <!-- Pulsing Zoom-In / Zoom-Out Button -->
+                            <button type="submit" class="btn-submit-contact btn-pulse-zoom">
+                                <span>SEND MESSAGE</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-faq-wrapper">
+                        <h3 class="faq-title"><i data-lucide="help-circle"></i> FREQUENTLY ASKED</h3>
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Where is Peter's Gym located in Dera Bassi?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We are located on the 2nd & 3rd Floor of the LIC Building, right near the Police Station in Dera Bassi, Punjab 140507.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the exact gym working hours?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Monday to Saturday: <strong>5:00 AM – 12:00 PM</strong> and <strong>4:00 PM – 10:00 PM</strong>. We are CLOSED on Sundays.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What is the official phone number & WhatsApp?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>You can call us directly at <strong>07009707765</strong> or message us on WhatsApp at <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" class="text-green">+91 7009707765</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <div class="nav-brand">
+                            <img src="logo.jpg" alt="Peter's Gym Logo" class="brand-logo-img">
+                            <div class="brand-text">
+                                <span class="brand-name">PETER'S</span>
+                                <span class="brand-sub">GYM</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">
+                            2nd & 3rd Floor, LIC Building, Near Police Station, Dera Bassi, Punjab 140507. High performance athletic training.
+                        </p>
+                        <!-- Social Links with Circular Instagram Icon -->
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="social-circle-insta" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insta-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                            <a href="tel:+917009707765" aria-label="Phone Call"><i data-lucide="phone"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-heading">QUICK LINKS</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#membership">Membership Fees</a></li>
+                            <li><a href="#location">Dera Bassi Location</a></li>
+                            <li><a href="#reviews">Google Reviews</a></li>
+                            <li><a href="#calculator">Metrics Tool</a></li>
+                            <li><a href="#contact">Contact Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-heading">CONTACT & HOURS</h4>
+                        <ul class="footer-links">
+                            <li>📍 2nd & 3rd Floor, LIC Bldg</li>
+                            <li>📍 Near Police Station, Dera Bassi</li>
+                            <li>⏰ Mon-Sat: 5am-12pm | 4pm-10pm</li>
+                            <li>❌ Sun: Closed</li>
+                            <li>📞 <a href="tel:+917009707765">07009707765</a></li>
+                            <li>💬 <a href="https://api.whatsapp.com/send?phone=+917009707765" target="_blank" class="text-green">WhatsApp Direct</a></li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-link-icon text-pink"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="text-pink">Instagram @petersgymderabassi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-heading">INSTAGRAM OFFICIAL</h4>
+                        <p class="footer-desc">Follow @petersgymderabassi for daily workout updates.</p>
+                        <a href="https://www.instagram.com/petersgymderabassi/" target="_blank" rel="noopener" class="btn-instagram-footer">
+                            <div class="insta-circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insta-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </div>
+                            <span>@petersgymderabassi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 PETER'S GYM DERA BASSI. ALL RIGHTS RESERVED.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal for Plan Sign-Up -->
+    <div id="plan-modal" class="modal-overlay">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="modal-close"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <i data-lucide="shield-check" class="modal-icon"></i>
+                <h3 id="modal-plan-title">MEMBERSHIP SELECTION</h3>
+                <p>Register for Peter's Gym Dera Bassi</p>
+            </div>
+            <form id="modal-form" class="modal-form">
+                <div class="input-group">
+                    <label for="m-name">Full Name</label>
+                    <input type="text" id="m-name" class="glass-input" required placeholder="Rahul Sharma">
+                </div>
+                <div class="input-group">
+                    <label for="m-email">Email Address</label>
+                    <input type="email" id="m-email" class="glass-input" required placeholder="rahul@example.com">
+                </div>
+                <div class="input-group">
+                    <label for="m-phone">Phone Number</label>
+                    <input type="tel" id="m-phone" class="glass-input" required value="07009707765">
+                </div>
+                <button type="submit" class="btn-modal-submit">CONFIRM & JOIN NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast-notification">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <span id="toast-message">Submission successful!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
