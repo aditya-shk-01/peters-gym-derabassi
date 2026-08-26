@@ -1371,56 +1371,11 @@ img {
     z-index: 2;
 }
 
-.calc-header-inner {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
 
-.calc-badge-col {
-    flex-shrink: 0;
-}
 
-.calc-badge-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.35rem;
-    min-width: 140px;
-    padding: 1.2rem 1.4rem;
-    background: linear-gradient(135deg, var(--burgundy-main), rgba(109, 0, 26, 0.7));
-    border: 1.5px solid var(--primary-copper-light);
-    border-radius: 20px;
-    box-shadow: none;
-    color: #fff;
-    font-family: var(--font-heading);
-    font-weight: 900;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-}
 
-.calc-badge-block svg {
-    width: 30px;
-    height: 30px;
-    color: var(--primary-copper-light);
-    stroke-width: 2.2;
-}
 
-.calc-badge-sub {
-    color: var(--primary-copper-light);
-    font-size: 0.95rem;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
 
-.calc-title-col {
-    flex: 1;
-}
 
 .calc-grid {
     display: grid;
@@ -1478,13 +1433,14 @@ select.glass-input option {
 
 
 
-/* 100% Flat Matte Action Buttons with Absolute Zero Glow */
+
+/* 100% Flat Matte Static Action Buttons - Zero Glow, Zero Pulsing, Zero Animation */
 .btn-calc-submit, .btn-submit-contact {
     width: 100%;
     padding: 1.1rem 1.6rem;
     border-radius: 30px;
     background: #6D001A !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
     color: #ffffff !important;
     font-family: var(--font-heading);
     font-size: 0.92rem;
@@ -1501,26 +1457,29 @@ select.glass-input option {
     filter: none !important;
     outline: none !important;
     animation: none !important;
-    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease !important;
+    transform: none !important;
+    transition: background 0.2s ease, border-color 0.2s ease !important;
 }
 
 .btn-calc-submit:hover, .btn-submit-contact:hover {
     background: #84001f !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
-    transform: translateY(-2px) !important;
+    border-color: rgba(255, 255, 255, 0.45) !important;
     box-shadow: none !important;
     text-shadow: none !important;
     filter: none !important;
+    transform: none !important;
+    animation: none !important;
 }
 
 .btn-calc-submit:focus, .btn-submit-contact:focus,
 .btn-calc-submit:active, .btn-submit-contact:active {
-    background: #520013 !important;
+    background: #500013 !important;
     border-color: rgba(255, 255, 255, 0.5) !important;
-    transform: translateY(0) !important;
     box-shadow: none !important;
     outline: none !important;
+    transform: none !important;
 }
+
 
 
 
@@ -1928,11 +1887,7 @@ select.glass-input option {
         gap: 2.5rem;
     }
 
-    .calc-header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-    }
+    
 
     .calc-badge-block {
         width: 100%;
