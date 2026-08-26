@@ -1476,39 +1476,43 @@ select.glass-input option {
 }
 
 
-/* Clean Matte Action Buttons (Calculate Metrics & Send Message) */
+
+/* Absolute Zero-Glow Matte Action Buttons (Calculate Metrics & Send Message) */
 .btn-calc-submit, .btn-submit-contact {
     width: 100%;
-    padding: 1.05rem 1.5rem;
+    padding: 1.1rem 1.6rem;
     border-radius: 30px;
-    background: #6D001A;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    color: #ffffff;
+    background: #6D001A !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
     font-family: var(--font-heading);
     font-size: 0.92rem;
     font-weight: 800;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.65rem;
+    gap: 0.7rem;
     cursor: pointer;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
 }
 
 .btn-calc-submit:hover, .btn-submit-contact:hover {
-    background: #8b0021;
-    border-color: rgba(255, 255, 255, 0.32);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.65);
+    background: #8a0021 !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5) !important;
 }
 
 .btn-calc-submit:active, .btn-submit-contact:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(0) !important;
+    box-shadow: none !important;
 }
+
 
 
 .calc-results-panel {
@@ -2525,91 +2529,119 @@ select.glass-input option {
 }
 
 
-/* Line-to-Text Morph Animation & Kinetic Dual-Slide Reveal */
-.morph-line-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12px;
-    margin-bottom: 1.2rem;
-}
 
-.morph-line {
-    width: 0px;
-    height: 2px;
-    background: #80001a;
-    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
-    will-change: width, opacity;
-}
-
-.program-section.unmasked .morph-line {
-    width: 140px;
-    opacity: 0.85;
-}
-
+/* ==========================================================================
+   DISTINCTIVE KINETIC TEXT ANIMATION: PROGRAM INCLUDED
+   ========================================================================== */
 .program-title-burgundy-stacked {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 0.95;
+    line-height: 0.92;
     font-family: var(--font-heading);
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 3.5rem;
-    perspective: 1000px;
-    overflow: hidden;
+    perspective: 1200px;
+    cursor: default;
+    user-select: none;
+    padding: 1rem 0;
+}
+
+.program-badge-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--primary-copper-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.program-badge-tag svg {
+    width: 14px;
+    height: 14px;
+    color: var(--primary-copper-light);
 }
 
 .program-word-top {
-    font-size: clamp(3.2rem, 7.5vw, 6rem);
-    color: #990024;
-    letter-spacing: 0.35em;
+    font-size: clamp(3.2rem, 7.8vw, 6.2rem);
+    color: #ffffff;
+    letter-spacing: 0.32em;
     display: inline-block;
     opacity: 0;
-    transform: translateY(-50px) rotateX(25deg);
-    filter: blur(8px);
-    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.75s ease, filter 0.75s ease, letter-spacing 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: transform, opacity, letter-spacing, filter;
+    transform: translateY(-40px) scale(0.92);
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s ease, letter-spacing 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: clip-path, transform, opacity, letter-spacing;
 }
 
 .program-word-bottom {
-    font-size: clamp(3.8rem, 8.8vw, 7.2rem);
-    background: linear-gradient(135deg, #ffffff 0%, #d41e46 50%, #80001a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.45em;
+    font-size: clamp(3.8rem, 9vw, 7.4rem);
+    color: #6D001A;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.4em;
     display: inline-block;
     opacity: 0;
-    transform: translateY(50px) rotateX(-25deg);
-    filter: blur(8px);
-    transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s, opacity 0.85s ease 0.15s, filter 0.85s ease 0.15s, letter-spacing 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
-    will-change: transform, opacity, letter-spacing, filter;
+    transform: translateY(40px) scale(0.92);
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, opacity 0.7s ease 0.12s, letter-spacing 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s;
+    will-change: clip-path, transform, opacity, letter-spacing;
 }
 
-/* Active Unmasked State: Crisp Kinetic Lock-in */
+.program-title-line-sweep {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6D001A, #d41e46, #6D001A, transparent);
+    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s;
+}
+
+/* Activated Kinetic Lock-in State */
+.program-section.unmasked .program-badge-tag {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .program-section.unmasked .program-word-top {
     opacity: 1;
-    transform: translateY(0) rotateX(0deg);
-    filter: blur(0px);
-    letter-spacing: 0.18em;
+    transform: translateY(0) scale(1);
+    clip-path: inset(0 0 0% 0);
+    letter-spacing: 0.16em;
 }
 
 .program-section.unmasked .program-word-bottom {
     opacity: 1;
-    transform: translateY(0) rotateX(0deg);
-    filter: blur(0px);
-    letter-spacing: 0.24em;
+    transform: translateY(0) scale(1);
+    clip-path: inset(0% 0 0 0);
+    letter-spacing: 0.22em;
 }
 
+.program-section.unmasked .program-title-line-sweep {
+    width: 220px;
+}
+
+/* Hover Elastic Micro-Interaction */
 .program-title-burgundy-stacked:hover .program-word-top {
-    letter-spacing: 0.24em;
-    transition: letter-spacing 0.4s ease;
+    letter-spacing: 0.22em;
+    transform: translateY(-2px);
+    transition: letter-spacing 0.4s ease, transform 0.4s ease;
 }
 
 .program-title-burgundy-stacked:hover .program-word-bottom {
-    letter-spacing: 0.3em;
-    transition: letter-spacing 0.4s ease;
+    color: #d41e46;
+    letter-spacing: 0.28em;
+    transform: translateY(2px);
+    transition: letter-spacing 0.4s ease, transform 0.4s ease, color 0.4s ease;
 }
 
 .program-grid-212 {
